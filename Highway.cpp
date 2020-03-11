@@ -13,7 +13,8 @@ void Highway::changeSpeed(int newSpeed)
 
 void Highway::addVehicleInternal(Vehicle* v)
 {
-    assert(false);
+    // assert(false);
+    std::cout << &v << std::endl;
 
     /*
     depending on the derived type, call the member function that doesn't evade the cops. 
@@ -22,7 +23,8 @@ void Highway::addVehicleInternal(Vehicle* v)
 
 void Highway::removeVehicleInternal(Vehicle* v)
 {
-    assert(false);
+    // assert(false);
+    std::cout << &v << std::endl;
 
     /*
     depending on the derived type, call the member function that tries to evade the cops. 

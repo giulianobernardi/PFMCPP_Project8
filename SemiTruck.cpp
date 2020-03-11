@@ -1,20 +1,20 @@
-// #include "Motorcycle.h"
+// #include "SemiTruck.h"
 
-// Motorcycle::Motorcycle(const std::string& n) : Vehicle(n) {}
-// // Motorcycle::~Motorcycle() {}
+// SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) {}
+// // SemiTruck::~SemiTruck() {}
 
-// void Motorcycle::lanesplitAndRace( int topSpeed )
+// void SemiTruck::lanesplitAndRace( int topSpeed )
 // {
 //     setSpeed(topSpeed);
 //     std::cout << name << (topSpeed > 90 ? ": yeeehawwww" : ": zzzzzzzz") << std::endl;
 // }
-// void Motorcycle::tryToEvade()
+// void SemiTruck::tryToEvade()
 // {
 //     std::cout << name << ": you'll never take me alive, ya dirty coppers!" << std::endl;
 //     setSpeed(120);
 // }
 
-// void Motorcycle::setSpeed(int s)
+// void SemiTruck::setSpeed(int s)
 // {
 //     if( s < 90 )
 //     {

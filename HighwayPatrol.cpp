@@ -1,18 +1,18 @@
 #include "HighwayPatrol.h"
+#include "Highway.h"
 #include <iostream>
 
 HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
 {
-
 }
 
 void HighwayPatrol::scanHighway(Highway* h)
 {
     std::cout << name << ": scanning highway for speeders" << std::endl;
 
-    for( int i = h->vehicles.size(); --i >= 0; )
+    for( int i = static_cast<int>(h->vehicles.size()); --i >= 0; )
     {
-        auto* v = h->vehicles[i];
+        auto* v = h->vehicles[static_cast<std::size_t>(i)];
         if( v->speed > h->speedLimit + 5 )
         {
             pullOver(v, v->speed > (h->speedLimit + 15), h );
