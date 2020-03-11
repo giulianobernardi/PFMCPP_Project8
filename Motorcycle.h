@@ -1,18 +1,18 @@
-// #pragma once
+#pragma once
 
-// #include <iostream>
-// #include <limits>
+#include <iostream>
+#include <limits>
 
-// #include "Vehicle.h"
+#include "Vehicle.h"
 
-// struct Motorcycle : public Vehicle
-// {
-//     Motorcycle(const std::string& n);
-//     // ~Motorcycle() override;
+struct Motorcycle : public Vehicle
+{
+    Motorcycle(const std::string& n);
+    ~Motorcycle() override;
     
-//     void lanesplitAndRace( int topSpeed = std::numeric_limits<int>::max() );
+    void lanesplitAndRace( int topSpeed = std::numeric_limits<int>::max() );
     
-//     void tryToEvade() override;
+    void tryToEvade() override;
 
-//     void setSpeed(int s) override;
-// };
+    void setSpeed(int s) override;
+};
