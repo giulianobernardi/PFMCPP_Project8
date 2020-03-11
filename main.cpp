@@ -63,9 +63,10 @@ int main()
     { 
         Motorcycle("James"), Motorcycle("Bond"),  Motorcycle("Grandpa Smurf")
     };
+
     std::vector<SemiTruck> trucks
     {
-        SemiTruck("The Truck Driver"), SemiTruck("I<3SelfDrivingTrucks")
+        SemiTruck("The Truck Driver"), SemiTruck("I<3SelfDrivingTrucks"), SemiTruck("Los Pollos Hermanos")
     };
 
     // Adding vehicles to the highway
