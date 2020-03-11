@@ -1,6 +1,7 @@
 #include "Motorcycle.h"
 
 Motorcycle::Motorcycle(const std::string& n) : Vehicle(n) {}
+Motorcycle::Motorcycle(const Motorcycle& m) : Vehicle(m.name) {}
 Motorcycle::~Motorcycle() {}
 
 void Motorcycle::lanesplitAndRace( int topSpeed )
@@ -19,7 +20,8 @@ void Motorcycle::setSpeed(int s)
     if( s < 90 )
     {
         //ignore the request to lower the speed
-        std::cout<< name << ": uh, no.  i'm currently lane-splitting and racing" << std::endl;
+        std::cout << "\n";
+        std::cout<< name << ": uh, no. I'm currently lane-splitting and racing" << std::endl;
     }
     else
     {

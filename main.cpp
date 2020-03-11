@@ -52,28 +52,38 @@ your task:
 
 int main()
 {
-    // Highway highway;
+    Highway highway;
     
-    // std::vector<Car> cars 
-    // { 
-    //     Car("janice"),
-    // };
-    // std::vector<Motorcycle> motorcycles
-    // { 
+    // Creating vehicles
+    std::vector<Car> cars 
+    { 
+        Car("Janice"), Car("Mark"), Car("Mikey"), Car("Donald")
+    };
+    std::vector<Motorcycle> motorcycles
+    { 
+        Motorcycle("James"), Motorcycle("Bond"),  Motorcycle("Grandpa Smurf")
+    };
+    std::vector<SemiTruck> trucks
+    {
+        SemiTruck("The Truck Driver"), SemiTruck("I<3SelfDrivingTrucks")
+    };
 
-    // };
+    // Adding vehicles to the highway
+    for (auto& car: cars)
+        highway.addVehicle(&car);
 
-    // std::vector<SemiTruck> trucks
-    // {
+    for (auto& motorcycle: motorcycles)
+        highway.addVehicle(&motorcycle);
 
-    // };
+    for (auto& truck: trucks)
+        highway.addVehicle(&truck);    
 
     // assert(false);
     // //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
     // //be careful to not accidentally make element copies when iterating.
     
-    // HighwayPatrol cop;
-    // cop.scanHighway(&highway);
+    HighwayPatrol cop;
+    cop.scanHighway(&highway);
 
     std::cout << "done" << std::endl;
 

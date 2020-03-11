@@ -5,7 +5,8 @@ Vehicle::~Vehicle() {}
 
 void Vehicle::setSpeed(int s)
 {
-    std::cout << "\nHighway is adjusting " << name << "'s speed to " << s << " mph" << std::endl;
+    std::cout << "\n";
+    std::cout << "Highway is adjusting " << name << "'s speed to " << s << " mph" << std::endl;
     speed = s;
 }
 

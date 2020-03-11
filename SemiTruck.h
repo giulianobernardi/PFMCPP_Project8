@@ -1,18 +1,14 @@
 #pragma once
 
-#include <iostream>
-#include <limits>
-
 #include "Vehicle.h"
 
 struct SemiTruck : public Vehicle
 {
     SemiTruck(const std::string& n);
+    SemiTruck(const SemiTruck& s);
     ~SemiTruck() override;
     
-    void lanesplitAndRace( int topSpeed = std::numeric_limits<int>::max() );
-    
-    void tryToEvade() override;
+    void closeWindows();
 
-    void setSpeed(int s) override;
+    void breakAndPullOver();
 };

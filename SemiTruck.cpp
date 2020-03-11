@@ -1,28 +1,20 @@
 #include "SemiTruck.h"
 
+#include <iostream>
+
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) {}
+SemiTruck::SemiTruck(const SemiTruck& s) : Vehicle(s.name) {}
 SemiTruck::~SemiTruck() {}
 
-void SemiTruck::lanesplitAndRace( int topSpeed )
+void SemiTruck::closeWindows()
 {
-    setSpeed(topSpeed);
-    std::cout << name << (topSpeed > 90 ? ": yeeehawwww" : ": zzzzzzzz") << std::endl;
-}
-void SemiTruck::tryToEvade()
-{
-    std::cout << name << ": you'll never take me alive, ya dirty coppers!" << std::endl;
-    setSpeed(120);
+    setSpeed(70);
+    std::cout << name << ": closing the windows!" << std::endl;
 }
 
-void SemiTruck::setSpeed(int s)
+void SemiTruck::breakAndPullOver()
 {
-    if( s < 90 )
-    {
-        //ignore the request to lower the speed
-        std::cout<< name << ": uh, no.  i'm currently lane-splitting and racing" << std::endl;
-    }
-    else
-    {
-        Vehicle::setSpeed(s);
-    }
+    setSpeed(0);
+    std::cout << name << ": hello officer, this is a heavy truck; it takes time to stop it!" << std::endl;
 }
+
