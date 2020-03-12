@@ -1,7 +1,6 @@
 #include "Vehicle.h"
 
 Vehicle::Vehicle(const std::string& n) : name(n) { }
-Vehicle::~Vehicle() {}
 
 void Vehicle::setSpeed(int s)
 {

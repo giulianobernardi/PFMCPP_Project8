@@ -3,8 +3,6 @@
 #include <iostream>
 
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) {}
-SemiTruck::SemiTruck(const SemiTruck& s) : Vehicle(s.name) {}
-SemiTruck::~SemiTruck() {}
 
 void SemiTruck::closeWindows()
 {

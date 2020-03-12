@@ -6,9 +6,6 @@ HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
 {
 }
 
-HighwayPatrol::~HighwayPatrol()
-{
-}
 
 void HighwayPatrol::scanHighway(Highway* h)
 {

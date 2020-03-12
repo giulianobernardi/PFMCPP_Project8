@@ -8,8 +8,10 @@ struct HighwayPatrol; // forward declaration
 struct Vehicle
 {
     Vehicle(const std::string& n);
-    // Virtual constructor needed since there are other virtual methods and the class is inherited
-    virtual ~Vehicle();
+    
+    virtual ~Vehicle() = default;
+    Vehicle(const Vehicle&) = default;
+    Vehicle& operator=(const Vehicle&) = default;
     
     virtual void setSpeed(int s);
 
