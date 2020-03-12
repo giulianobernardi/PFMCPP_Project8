@@ -109,7 +109,8 @@ int main()
      
      reserve how ever many cars, motorcycles, and trucks you'll create first
      */
-    cars.reserve(3); //reserving room for 3 Car instances
+    cars.reserve(4); //reserving room for 3 Car instances
+    
     
     /*
      Now that we have reserved space for our UDT instances inside the vector, we can construct them in-place inside the vector.
@@ -117,15 +118,27 @@ int main()
      
      use the vector member function 'emplace_back' to construct your car/truck/motorcycle instances in-place
      */
-    cars.emplace_back("janice"); //constructing the first Car instance in-place in the cars vector
+    cars.emplace_back("Janice"); //constructing the first Car instance in-place in the cars vector
     
     /*
      construct 2 more Car instances via emplace_back.
      */
+    cars.emplace_back("Goofy"); //constructing the second Car instance in-place in the cars vector
+    cars.emplace_back("Donald"); //constructing the third Car instance in-place in the cars vector     
+         
     
     /*
      now reserve and emplace_back your Trucks and Motorcyles
      */
+    motorcycles.reserve(2); //reserving room for 3 Motorcycle instances
+    trucks.reserve(2); //reserving room for 3 Semitruck instances
+    // ----------     
+    motorcycles.emplace_back("James"); //constructing the first Car instance in-place in the cars vector
+    motorcycles.emplace_back("Bond"); //constructing the second Car instance in-place in the cars vector
+    trucks.emplace_back("The old man"); //constructing the first Semitruck instance in-place in the trucks vector
+    trucks.emplace_back("I<3SelfDrivingTrucks"); //constructing the second Semitruck instance in-place in the trucks vector
+    trucks.emplace_back("Los Pollos Hermanos"); //constructing the third Semitruck instance in-place in the trucks vector   
+
 
     // Adding vehicles to the highway
     for (auto& car: cars)

@@ -6,6 +6,7 @@
 struct HighwayPatrol : Vehicle 
 {
     HighwayPatrol();
+    ~HighwayPatrol();
     
     void scanHighway(Highway* h);
 
