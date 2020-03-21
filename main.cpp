@@ -131,7 +131,7 @@ int main()
      now reserve and emplace_back your Trucks and Motorcyles
      */
     motorcycles.reserve(2); //reserving room for 3 Motorcycle instances
-    trucks.reserve(2); //reserving room for 3 Semitruck instances
+    trucks.reserve(3); //reserving room for 3 Semitruck instances
     // ----------     
     motorcycles.emplace_back("James"); //constructing the first Car instance in-place in the cars vector
     motorcycles.emplace_back("Bond"); //constructing the second Car instance in-place in the cars vector

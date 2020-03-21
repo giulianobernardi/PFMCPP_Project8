@@ -10,6 +10,4 @@ struct SemiTruck : public Vehicle
     void breakAndPullOver();
 
     void tryToEvade() override;
-
-    void setSpeed(int s) override;
 };
