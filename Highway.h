@@ -2,6 +2,12 @@
 
 #include <vector>
 #include <algorithm>
+#include "Vehicle.h"
+#include "Car.h"
+#include "SemiTruck.h"
+#include "Motorcycle.h"
+
+struct HighwayPatrol; // forward declaration
 
 struct Highway
 {
@@ -13,4 +19,6 @@ private:
     void removeVehicleInternal(Vehicle* v);
     int speedLimit = 65;
     std::vector<Vehicle*> vehicles;
+
+    friend HighwayPatrol;
 };
